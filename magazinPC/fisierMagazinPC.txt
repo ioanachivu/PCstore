@@ -1,0 +1,5 @@
+120034,124,Intel,2018,24,motherboard,SUA,14
+120567,200,Logitech,2017,12,mouse,Elvetia,20
+120045,185,Kingston,2017,12,memory,SUA,1
+120899,246,ASUS,2018,24,motherboard,Taiwan,30
+120039,567,Kingston,2018,12,memory,SUA,22
