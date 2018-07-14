@@ -1,35 +1,34 @@
-package magazinPC;
 
 public class Main {
     public static void main(String[] args) {
         
-        Magazin magazin = new Magazin();
+        Store store = new Store();
         
-        magazin.citireFisier();
+        store.fileReading();
         
-        // afisare lista produse
-        magazin.afisareProduse();
+        // show list of products
+        store.showProducts();
         
-        // adaugare produs nou la o anumita componenta introdusa de la tastatura
-        //magazin.adaugareProdus();
+        // adding a new product from keyboard
+        store.addProduct();
+        System.out.println("New listing of products:");
+        store.showProducts();;
+        
+        // selling a product
+        store.sellProduct();;
+        
+        // deleting a product
+        store.deleteProduct();;
         //System.out.println("Afisare noua lista de produse:");
-        //magazin.afisareProduse();
-        
-        // vanzare produs
-        //magazin.vanzareProdus();
-        
-        /// stergere produs
-        //magazin.stergereProdus();
-        //System.out.println("Afisare noua lista de produse:");
-        //magazin.afisareProduse();
+        store.showProducts();;
         
         // reactualizare stoc
-        magazin.incarcareStoc();
+        store.refreshStock();
         
         // totalul in lei pentru o categorie
-        //magazin.calculareTotal("Kingston");
+        store.calculateTotal("Kingston");
         
         // afisare pret pt anumite produse cautate dupa marca
-        //magazin.pretDupaMarca("Kingston");
+        store.priceByBrand("Kingston");
     }
 }
